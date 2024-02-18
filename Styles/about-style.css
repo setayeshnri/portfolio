@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(240, 233, 223);
+  max-width: 100%;
+  min-width: 60vh;
+}
+
+.hi-me {
+  margin-bottom: 5%;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+i {
+  margin: 20px;
+}
+
+p {
+  background-color: rgb(244, 241, 237);
+  border-radius: 9px;
+  font-size: 25px;
+  padding: 3vh 20px 20px;
+  font-weight: 300;
+}
+
+.my-pic {
+  margin-top: 60px;
+}
+
+img {
+  border-radius: 20px;
+  width: 360px;
+  height: 380px;
+}
+
+h5 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 45px;
+  font-weight: 100;
+
+  color: rgb(80, 71, 71);
+}
+
+h3 {
+  font-size: 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.homepage {
+  color: rgb(186, 49, 49);
+}
+
+.homepage:visited {
+  color: brown;
+}
+
+a {
+  color: rgb(71, 68, 68);
+  font-family: "Times New Roman", Times, serif;
+}
+
+a:visited {
+  color: rgb(71, 68, 68);
+}
+
+nav {
+  background-color: rgb(244, 241, 237);
+}
+
+.rest {
+  text-align: center;
+}
+
+.about-section {
+  padding-top: 60px;
+  text-align: center;
+}
+
+@media (min-width: 950px) {
+  h5 {
+    padding-top: 80px;
+  }
+
+  .hi-me {
+    text-align: center;
+  }
+}
