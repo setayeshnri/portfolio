@@ -10,215 +10,174 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
+    
     <script
       src="https://kit.fontawesome.com/d9a6d0b4c6.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="/Styles/styles.css" />
   </head>
   <body>
-    <main class="d-flex align-items-end flex-column">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">Setayesh Nouri</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="index.html"
-                  title="homepage"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html" title="About Setayesh"
-                  >About Me</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="/contact.html"
-                  title="Contact Setayesh"
-                  >Contact Me</a
-                >
-              </li>
-            </ul>
-          </div>
+    <main>
+      <nav class="navbar">
+        <div class="navContainer">
+          <a class="navbar-brand" href="/">SETAYESH</a>
+
+          <ul class="nav">
+            <li class="nav-item">
+              <a
+                style="color: rgba(255, 94, 135, 1)"
+                class="nav-link"
+                aria-current="page"
+                href="/index.html"
+                title="homepage"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About/about.html" title="About Setayesh"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html" title="Contact Setayesh"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
         </div>
       </nav>
-      <div class="container p-2">
+      <div class="container-fluid p-2">
         <div class="start">
-        <div id="headers">
-          <h2>Hi, I am</h2>
-          <h1>Setayesh Nouri</h1>
-          <h3>Front-end developer, based in Stockholm</h3>
-        </div>
-        <div class="buttons">
-          <a href="/about.html" class="btn btn-branding custom-button"
-            >About Me</a
-          >
-        </div></div>
-        <hr />
-        <div class="PlantButlers">
-          <div class="row">
-            <div class="col-sm">
-              <div class="sec1 col-sm">
-                <div class="sec2 col-sm">
-                  <h2>Plant Butlers</h2>
+          <div class="intro">
+            <div class="image">
+              <div class="circle1"></div>
+              <img class="pic1" src="/images/pic2.JPEG" alt="" />
+              <div class="circle2"></div>
+            </div>
+            <div id="headers">
+              <h1>Hi! I'm <br />Setayesh</h1>
 
-                  <p class="tools">#react</p>
-                  <p class="tools">#javascript</p>
-                  <p class="tools">#HTML</p>
-                  <p class="tools">#css</p>
-                </div>
-                <div class="col-sm" style="align-self: center">
-                  <img
-                    src="/images/plant-butlers.png"
-                    alt="Plant Butlers"
-                    class="img-fluid"
-                  />
-                </div>
+              <h2>Front-end developer <br />based in Stockholm</h2>
+            </div>
+            <div
+              class="circle2"
+              style="margin-top: 20px; margin-right: -200px"
+            ></div>
+          </div>
+        </div>
+
+        <div class="PlantButlers">
+          <div class="rows">
+            <div class="sec1 col-sm">
+              <div class="tools">
+                <p>#React</p>
+                <p>#Javascript</p>
+                <p>#HTML</p>
+                <p>#CSS</p>
               </div>
-              <div class="col-sm flex-container">
+              <div class="sec1-2">
+                <h2>Plant Butlers</h2>
                 <p>
                   This project, Plant Butlers, showcases my skills in front-end
-                  development and user interface design. Project Overview: -
-                  Objective: Create a user-friendly web application. - Tech
-                  Stack: React, JavaScript, HTML, CSS. - Key Features: -
-                  Interactive shop: Designed an intuitive shop for users to add
-                  items to the cart and proceed to checkout. - Plant Detective
-                  section: Integrated with a plant database API to provide
-                  detailed information on various plant species. - Responsive
-                  Design: Ensured a seamless experience across various devices.
-                  Lessons Learned: - Strengthened my understanding of React
-                  components and state management. - Enhanced problem-solving
-                  skills through overcoming challenges in API integration and
-                  responsive design.
+                  development and user interface design.
                 </p>
                 <a
-                  href="https://plant-butlers.netlify.app/"
-                  class="btn btn-branding2"
-                  target="_blank"
-                  >Launch Plant Butlers</a
-                >
-                <a
-                  href=""
-                  class="btn btn-branding2"
-                  style="margin-left: 9px; font-size: large"
-                  target="_blank"
-                  ><i class="fa-brands fa-github git"></i>GitHub</a
-                >
+                  href="/projects/plantButlers.html"
+                  class="btn"
+                  
+               
+                    > view the project<span class="material-symbols-outlined"> navigate_next </span>
+                </a>
               </div>
+            </div>
+            <div class="sec2">
+              <img
+                src="/images/plant-butlers.png"
+                alt="Plant Butlers"
+                class="projectImg"
+              />
+             
             </div>
           </div>
         </div>
 
         <div class="Masterpiece Matchup">
-          <div class="row">
-            <div class="col-sm">
-              <div class="col-sm sec1">
-                <div class="sec2 col-sm">
-                  <h2>Masterpiece Matchup</h2>
-
-                  <p class="tools">#javascript</p>
-                  <p class="tools">#HTML</p>
-                  <p class="tools">#css</p>
-                </div>
-                <div class="col-sm" style="align-self: center">
-                  <img
-                    src="/images/Masterpiece-Matchup.png"
-                    alt="Masterpiece Matchup"
-                    class="img-fluid"
-                  />
-                </div>
+          <div class="rows">
+            <div class="sec2">
+              <img
+                src="/images/Masterpiece-Matchup.png"
+                alt="Plant Butlers"
+                class="projectImg"
+                style="margin-right: 0;
+                margin-left: 100px;"
+              />
+              <div class="square2"></div>
+            <div class="sec1 col-sm">
+              <div class="tools" style="padding-right:10px; margin-right: -250px; margin-top: 97px;">
+                
+                <p>#Javascript</p>
+                <p>#HTML</p>
+                <p>#CSS</p>
               </div>
-              <div class="col-sm flex-container">
-                <p>
-                  I built a Vanilla JavaScript weather app in SheCodes Plus, an
-                  advanced 8-week JavaScript coding workshop. Building upon my
-                  previously-gained knowledge, I also became skilled in
-                  Bootstrap, API’s, real-life development workflow, hosting, and
-                  advanced JavaScript. I combined all of these skills to create
-                  a fully-functioning weather app.
+              <div class="sec1-2">
+                <h2>Plant Butlers</h2>
+                <p style="margin-right: -250px;">
+                  This project, Plant Butlers, showcases my skills in front-end
+                  development and user interface design.
                 </p>
                 <a
-                  href="https://lucky-boba-89535d.netlify.app/"
-                  target="_blank"
-                  class="btn btn-branding2"
-                >
-                  Launch Masterpiece Matchup</a
-                >
-                <a
-                  href=""
-                  class="btn btn-branding2"
-                  style="margin-left: 9px; font-size: large"
-                  target="_blank"
-                  ><i class="fa-brands fa-github git"></i>GitHub</a
-                >
+                  href="/projects/masterpiece.html"
+                  class="btn"
+                  style="margin-right: ;"
+               
+                    > view the project<span class="material-symbols-outlined"> navigate_next </span>
+                </a>
               </div>
+            </div>
+            
             </div>
           </div>
         </div>
 
         <div class="weather">
-          <div class="row">
-            <div class="col-sm">
-              <div class="col-sm sec1">
-                <div class="sec2 col-sm">
-                  <h2>Weather App</h2>
-                  <p class="tools">#javascript</p>
-                  <p class="tools">#HTML</p>
-                  <p class="tools">#css</p>
-                </div>
-                <div class="col-sm" style="align-self: center">
-                  <img
-                    src="images/weather.png"
-                    alt="weather image"
-                    class="img-fluid"
-                  />
-                </div>
+          <div class="rows">
+            <div class="rows">
+            <div class="sec1 col-sm">
+              <div class="tools">
+                
+                <p>#Javascript</p>
+                <p>#HTML</p>
+                <p>#CSS</p>
               </div>
-              <p>
-                I built a Vanilla JavaScript weather app in SheCodes Plus, an
-                advanced 8-week JavaScript coding workshop. Building upon my
-                previously-gained knowledge, I also became skilled in Bootstrap,
-                API’s, real-life development workflow, hosting, and advanced
-                JavaScript. I combined all of these skills to create a
-                fully-functioning weather app.
-              </p>
-
-              <a
-                href="https://idyllic-truffle-1e51b1.netlify.app/"
-                class="btn btn-branding2"
-                target="_blank"
-                >Launch Weather App</a
-              >
-              <a
-                  href=""
-                  class="btn btn-branding2"
-                  style="margin-left: 9px; font-size: large"
-                  target="_blank"
-                  ><i class="fa-brands fa-github git"></i>GitHub</a
-                >
+              <div class="sec1-2">
+                <h2>Weather App</h2>
+                <p>
+                  This project, Plant Butlers, showcases my skills in front-end
+                  development and user interface design.
+                </p>
+                <a
+                  href="/projects/weather.html"
+                  class="btn"
+                  
+               
+                    > view the project<span class="material-symbols-outlined"> navigate_next </span>
+                </a>
+              </div>
+            </div>
+            <div class="sec2">
+              <img
+                src="/images/weather.png"
+                alt="Plant Butlers"
+                class="projectImg"
+              />
+              <div class="square2"></div>
+            </div>
+          </div>
             </div>
           </div>
         </div>
