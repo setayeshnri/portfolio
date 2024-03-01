@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 .container {
   width: 100%;
   height: 100%;
@@ -13,6 +14,7 @@
   padding: 40px;
   padding-left: 140px;
   padding-right: 140px;
+  z-index: 3;
 }
 .navContainer {
   width: 100%;
@@ -20,13 +22,12 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.navbar-toggler {
+  border: none;
+}
 body {
   font-family: "Lato", sans-serif;
   background-color: rgba(255, 250, 251, 1);
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .intro {
@@ -68,7 +69,15 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.arrow {
+  margin-top: -125px;
+  width: 45px;
+  height: 40px;
+  margin-left: 100px;
+  z-index: 2;
+  cursor: pointer;
+  position: fixed;
+}
 h1 {
   font-size: 88px;
   font-family: "Times New Roman", Times, serif;
@@ -101,6 +110,7 @@ a:visited {
   height: 700px;
   display: flex;
   flex-direction: row;
+   flex-shrink: 0;
 }
 .sec1 {
   display: flex;
@@ -110,7 +120,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding-left: 215px;
+  margin-left: 215px;
 }
 .tools {
   display: flex;
@@ -127,7 +137,6 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 .projectImg {
   margin-right: 80px;
@@ -172,4 +181,142 @@ span {
 .sfooter {
   background-color: rgb(223, 219, 214);
   width: 100%;
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+.nav2 {
+  display: none;
+}
+.projects2 {
+  display: none;
+}
+.intro2 {
+  display: none;
+}
+@media (max-width: 600px) {
+  .nav1 {
+    display: none;
+  }
+  .nav2 {
+    display: inline-block;
+  }
+}
+@media (max-width: 650px) {
+  .navbar {
+    padding-right: 0%;
+  }
+  .projects1 {
+    display: none;
+  }
+  .projects2 {
+    display: inline-block;
+  }
+  .projectImg {
+    margin: auto;
+  }
+  .rows {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+  }
+  .tools {
+    padding: 24px;
+    margin-bottom: 30px;
+  }
+  .sec1-2 {
+    padding-left: 0;
+    align-items: center;
+  }
+  .sec2 {
+    margin-top: 40px;
+    height: 400px;
+  }
+  .intro1 {
+    display: none;
+  }
+  .intro2 {
+    margin: auto;
+    margin-top: 160px;
+    display: inline-block;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 100%;
+  }
+  .pic1 {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+  }
 }
