@@ -1,9 +1,12 @@
 body {
   background: rgba(255, 250, 251, 1);
 }
+
 main {
-  width: 80%;
+  
+  width: 95%;
   background: rgba(255, 255, 255, 1);
+  margin-left: 40px;
 }
 .navbar {
   position: fixed;
@@ -11,8 +14,10 @@ main {
   background-color: rgba(255, 250, 251, 1);
 
   padding: 40px;
-  padding-left: 140px;
+  padding-left: 100px;
   padding-right: 140px;
+  z-index: 3;
+ 
 }
 .navContainer {
   width: 100%;
@@ -20,21 +25,40 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
-h1{
+.space{
+  padding-top: 150px;
+  width: 100%;
+  background-color: rgba(255, 250, 251, 1);
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  
+}
+.type1h1{
+  margin-top: 10px;
     font-size: 88px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 600px;
+z-index: 2;
 }
 .square {
-  width: 234px;
-  height: 310px;
-  top: 155px;
-  left: 1278px;
+  width: 310px;
+  height: 234px;
+  margin-right: -100px;
+  margin-left: -170px;
   opacity: 0.6px;
+z-index: 0;
+  background:  rgba(255, 227, 234, 1);
 
-  background: rgba(255, 227, 234, 1);
+  margin-top: -40px;
 }
 .head {
+  
   display: flex;
   flex-direction: row;
+  justify-content:flex-end;
+
 }
 .buttons {
   display: flex;
@@ -52,4 +76,22 @@ h1{
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+}
+.image1{
+  width: 60%;
+  height: 40%;
+}
+.sect2{
+padding-left: 40px;
+}
+a{
+  color: black;
+ 
+}
+a:visited{
+  color: black;
+}
+.nav-link:hover{
+  color:rgba(255, 94, 135, 1);
+
 }
