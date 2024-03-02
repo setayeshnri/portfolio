@@ -1,9 +1,9 @@
 body {
   background: rgba(255, 250, 251, 1);
+  overflow-x: hidden;
 }
 
 main {
-  
   width: 95%;
   background: rgba(255, 255, 255, 1);
   margin-left: 40px;
@@ -17,7 +17,6 @@ main {
   padding-left: 100px;
   padding-right: 140px;
   z-index: 3;
- 
 }
 .navContainer {
   width: 100%;
@@ -25,22 +24,21 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
-.space{
+.space {
   padding-top: 150px;
   width: 100%;
   background-color: rgba(255, 250, 251, 1);
 }
-.project{
+.project {
   display: flex;
   flex-direction: column;
-  
 }
-.type1h1{
+.type1h1 {
   margin-top: 10px;
-    font-size: 88px;
-font-family: 'Times New Roman', Times, serif;
-font-weight: 600px;
-z-index: 2;
+  font-size: 88px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600px;
+  z-index: 2;
 }
 .square {
   width: 310px;
@@ -48,17 +46,15 @@ z-index: 2;
   margin-right: -100px;
   margin-left: -170px;
   opacity: 0.6px;
-z-index: 0;
-  background:  rgba(255, 227, 234, 1);
+  z-index: 0;
+  background: rgba(255, 227, 234, 1);
 
   margin-top: -40px;
 }
 .head {
-  
   display: flex;
   flex-direction: row;
-  justify-content:flex-end;
-
+  justify-content: flex-end;
 }
 .buttons {
   display: flex;
@@ -77,21 +73,60 @@ z-index: 0;
   line-height: 16px;
   font-weight: 700;
 }
-.image1{
+.image1 {
   width: 60%;
   height: 40%;
 }
-.sect2{
-padding-left: 40px;
+.sect2 {
+  padding-left: 40px;
 }
-a{
-  color: black;
- 
-}
-a:visited{
+a {
   color: black;
 }
-.nav-link:hover{
-  color:rgba(255, 94, 135, 1);
+a:visited {
+  color: black;
+}
+.nav-link:hover {
+  color: rgba(255, 94, 135, 1);
+}
+.nav2 {
+  display: none;
+}
+@media(max-width: 750px) {
+  .type1h1 {
+    font-size: 60px;
+    margin: auto;
+    margin-left: 80px;
+  }
+}
+@media(max-width: 600px) {
+  .type1h1 {
+    font-size: 50px;
+    margin: auto;
+    margin-left: 80px;
+  }
+  .nav1 {
+    display: none;
+  }
+  .nav2 {
+    display: inline-block;
+    
+  }
+ .navbar{
+  padding-left: 20px;
+ }
 
+  
+}
+@media(max-width:450px){
+  .navbar{
+    padding-right: 120px;
+  }
+  .type1h1{
+    margin-left: 40px;
+  }
+  .image1{
+ width: 80%;
+  height: 60%;
+  }
 }
