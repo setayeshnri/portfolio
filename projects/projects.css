@@ -3,11 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  width: 95%;
-  background: rgba(255, 255, 255, 1);
-  margin-left: 40px;
-}
 .navbar {
   position: fixed;
   width: 100%;
@@ -15,7 +10,7 @@ main {
 
   padding: 40px;
   padding-left: 100px;
-  padding-right: 140px;
+  padding-right: 4%;
   z-index: 3;
 }
 .navContainer {
@@ -24,41 +19,48 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
-.space {
-  padding-top: 150px;
-  width: 100%;
-  background-color: rgba(255, 250, 251, 1);
-}
+
 .project {
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
+  padding-left: 120px;
+  width: 95%;
+  background: rgba(255, 255, 255, 1);
+  margin-left: 160px;
+  margin-top: -40px;
+  z-index: 2;
+  margin-bottom:10% ;
 }
 .type1h1 {
   margin-top: 10px;
-  font-size: 88px;
+  font-size: 600%;
   font-family: "Times New Roman", Times, serif;
-  font-weight: 600px;
-  z-index: 2;
+  letter-spacing: 9px;
+  z-index: 1;
 }
 .square {
   width: 310px;
   height: 234px;
-  margin-right: -100px;
-  margin-left: -170px;
+  margin-right: -7%;
+  margin-left: -50px;
   opacity: 0.6px;
   z-index: 0;
+  position: relative;
   background: rgba(255, 227, 234, 1);
-
-  margin-top: -40px;
 }
 .head {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  padding-top: 12%;
+  width: 100%;
+  background-color: rgba(255, 250, 251, 1);
 }
 .buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-left: 6%;
 }
 
 .viewBtn {
@@ -72,13 +74,18 @@ main {
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+  margin-right: 10px;
 }
 .image1 {
-  width: 60%;
+  width: 70%;
   height: 40%;
+  margin-bottom: 60px;
 }
-.sect2 {
-  padding-left: 40px;
+.image2 {
+  display: none;
+  width: 80%;
+  height: 100%;
+  padding-top: 30%;
 }
 a {
   color: black;
@@ -92,19 +99,28 @@ a:visited {
 .nav2 {
   display: none;
 }
-@media(max-width: 750px) {
-  .type1h1 {
-    font-size: 60px;
-    margin: auto;
-    margin-left: 80px;
+.text1 {
+  width: 59%;
+  text-align: center;
+  margin-left: 5%;
+  margin-bottom: 60px
+}
+@media (max-width:900px){
+  .type1h1{
+    font-size: 600%;
+  }
+  .head{
+    padding-top: 200px;
   }
 }
-@media(max-width: 600px) {
-  .type1h1 {
-    font-size: 50px;
-    margin: auto;
-    margin-left: 80px;
-  }
+@media (max-width: 805px) {
+.type1h1{
+  font-size: 500%;
+letter-spacing: 4px;
+}
+.square{
+  margin-right: -20%;
+}
   .nav1 {
     display: none;
   }
@@ -112,21 +128,66 @@ a:visited {
     display: inline-block;
     
   }
- .navbar{
-  padding-left: 20px;
- }
-
-  
+  .navbar {
+    padding-left: 20px;
+  }
+  .project{
+    padding-left: 1px;
+    margin-left: 80px;
+    align-items: center;
+  }
 }
-@media(max-width:450px){
-  .navbar{
-    padding-right: 120px;
+@media (max-width: 600px) {
+  main {
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
   }
+  .head{
+    padding-top: 100px;
+  }
+  .type1h1 {
+    margin-left: 1%;
+    font-weight: 510;
+     font-size: 300%;
+    letter-spacing: 2px;
+  }
+  .square {
+    width: 35%;
+    height: 160px;
+    margin-bottom: -50px;
+   z-index: 1;
+  }
+  .image1 {
+    display: none;
+  }
+  .image2 {
+    display: inline-block;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .project {
+    background-color:transparent;
+    
+    margin: auto;
+align-items: center;
+    padding: 0;
+  }
+  .text1 {
+    background: rgba(255, 255, 255, 1);
+    padding: 10%;
+    width: 80%;
+    z-index: 2;
+  }
+}
+@media (max-width:430px){
   .type1h1{
-    margin-left: 40px;
+    font-size:250% ;
+    padding-left: 5%;
   }
-  .image1{
- width: 80%;
-  height: 60%;
+  .image2{
+    margin-top: 10%;
   }
 }
