@@ -28,6 +28,7 @@
 body {
   font-family: "Lato", sans-serif;
   background-color: rgba(255, 250, 251, 1);
+  overflow-x:hidden ;
 }
 
 .intro {
@@ -140,13 +141,15 @@ a:visited {
 }
 .projectImg {
   margin-right: 80px;
-
+width: 100%;
   margin-top: 32px;
   z-index: 2;
+  height: 70%;
+  
 }
 .square1 {
   background: rgba(255, 227, 234, 1);
-  width: 234px;
+  width: 40%;
   height: 269px;
   margin-top: 100px;
   margin-bottom: -370px;
@@ -154,7 +157,7 @@ a:visited {
 }
 .square2 {
   background-color: rgba(255, 255, 255, 1);
-  width: 519px;
+  width: 80%;
   height: 375px;
   margin-left: -120px;
 
