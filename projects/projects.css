@@ -30,7 +30,7 @@ body {
   margin-left: 160px;
   margin-top: -40px;
   z-index: 2;
-  margin-bottom:10% ;
+  margin-bottom: 10%;
 }
 .type1h1 {
   margin-top: 10px;
@@ -75,6 +75,7 @@ body {
   line-height: 16px;
   font-weight: 700;
   margin-right: 10px;
+  color: rgb(26, 9, 14, 100);
 }
 .image1 {
   width: 70%;
@@ -103,35 +104,34 @@ a:visited {
   width: 59%;
   text-align: center;
   margin-left: 5%;
-  margin-bottom: 60px
+  margin-bottom: 60px;
 }
-@media (max-width:900px){
-  .type1h1{
+@media (max-width: 900px) {
+  .type1h1 {
     font-size: 600%;
   }
-  .head{
+  .head {
     padding-top: 200px;
   }
 }
 @media (max-width: 805px) {
-.type1h1{
-  font-size: 500%;
-letter-spacing: 4px;
-}
-.square{
-  margin-right: -20%;
-}
+  .type1h1 {
+    font-size: 500%;
+    letter-spacing: 4px;
+  }
+  .square {
+    margin-right: -20%;
+  }
   .nav1 {
     display: none;
   }
   .nav2 {
     display: inline-block;
-    
   }
   .navbar {
     padding-left: 20px;
   }
-  .project{
+  .project {
     padding-left: 1px;
     margin-left: 80px;
     align-items: center;
@@ -141,23 +141,23 @@ letter-spacing: 4px;
   main {
     display: flex;
     align-items: center;
-   
+
     flex-direction: column;
   }
-  .head{
+  .head {
     padding-top: 100px;
   }
   .type1h1 {
     margin-left: 1%;
     font-weight: 510;
-     font-size: 300%;
+    font-size: 300%;
     letter-spacing: 2px;
   }
   .square {
     width: 35%;
     height: 160px;
     margin-bottom: -50px;
-   z-index: 1;
+    z-index: 1;
   }
   .image1 {
     display: none;
@@ -169,10 +169,10 @@ letter-spacing: 4px;
     flex-direction: column;
   }
   .project {
-    background-color:transparent;
-    
+    background-color: transparent;
+
     margin: auto;
-align-items: center;
+    align-items: center;
     padding: 0;
   }
   .text1 {
@@ -182,12 +182,12 @@ align-items: center;
     z-index: 2;
   }
 }
-@media (max-width:430px){
-  .type1h1{
-    font-size:250% ;
+@media (max-width: 430px) {
+  .type1h1 {
+    font-size: 250%;
     padding-left: 5%;
   }
-  .image2{
+  .image2 {
     margin-top: 10%;
   }
 }
