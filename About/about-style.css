@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
+body{
+  overflow-y: hidden;
+}
 .navbar {
   position: fixed;
   width: 100%;
@@ -89,7 +91,7 @@ i {
   font-size: 88px;
   font-family: "Times New Roman", Times, serif;
 
-  padding-left: 12%;
+  margin-left: -5%;
   margin-bottom: 20px;
   letter-spacing: 10px;
   font-weight: 600;
@@ -108,13 +110,16 @@ i {
 }
 p {
   font-size: 20px;
-  background-color: rgba(255, 255, 255, 1);
+  padding-bottom: 80px;
+}
+.texts{
   padding: 40px;
-  padding-right: 20px;
-  padding-bottom: 131px;
-  width: 453px;
+  
+  
+ 
 
   margin: auto;
+  background-color: rgba(255, 255, 255, 1); width: 453px;
 }
 
 a:visited {
@@ -131,14 +136,30 @@ a:visited {
   width: 110vh;
   height: 55vh;
   object-fit: cover;
+
 } 
-@media(max-width:1100px){
+.links{
+  margin-left: -80%;
+}
+@media(max-width:1110px){
+  body{
+    overflow-y: scroll;
+  }
     .nav1{
       padding-right: 30px;
     }
+    .firsth3 {
+  font-size: 88px;
+  font-family: "Times New Roman", Times, serif;
+
+  margin-left: 0%;
+  ;
+}
+
 }
 
 @media (max-width: 860px) {
+  
   .nav1{
     display: none;
   }
@@ -151,12 +172,15 @@ a:visited {
   .row2 {
     display: inline-block;
   }
-  p{
-   width: 300px;
+  .texts{
+   width: 80%;
   }
   .navbar-toggler{
     border: none;
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+  .secondh3{
+    font-size: 300%;
   }
 }
 @media(max-width:500px){
