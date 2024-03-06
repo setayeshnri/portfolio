@@ -29,35 +29,6 @@
     />
     <title>About Setayesh Nouri</title>
     <link rel="stylesheet" href="/projects/projects.css" />
-    <style>
-      @media (max-width: 980px) {
-        .type1h1 {
-          font-size: 500%;
-        }
-        .square {
-          margin-right: -20%;
-        }
-      }
-      @media (max-width: 805px) {
-        .type1h1 {
-          font-size: 420%;
-        }
-      }
-      @media (max-width: 805px) {
-         .square {
-          margin-right: -30%;
-        }
-      }
-       @media (max-width: 805px) {
-         .square {
-          margin-right: -20%;
-        }
-        .type1h1{
-            font-size: 370%;
-        }
-      }
-      
-    </style>
   </head>
   <body>
     <main>
@@ -174,15 +145,15 @@
           </div>
         </div>
       </nav>
-      <img class="image2" src="/images/matchupMac.png" alt="plant-butlers" />
+      <img class="image2" src="/images/reactMac.png" alt="react blog" />
 
       <div class="head">
         <div class="square"></div>
-        <h1 id="type1h1" class="type1h1">Weather website</h1>
+        <h1 id="type1h1" class="type1h1">React blog</h1>
       </div>
 
       <div class="project">
-        <img class="image1" src="/images/matchupMac.png" alt="plant-butlers" />
+        <img class="image1" src="/images/reactMac.png" alt="react blog" />
         <p class="text1">
           Passionate and dedicated web developer in training and an arts
           institute graduate in Architectural Drawing. Experienced in team work
@@ -197,5 +168,14 @@
         </div>
       </div>
     </main>
+       <script>
+      if (window.matchMedia("(max-width: 600px)").matches) {
+        var element = document.getElementById("type1h1");
+
+        if (element) {
+          element.innerText = "REACT BLOG";
+        }
+      }
+    </script>
   </body>
 </html>
