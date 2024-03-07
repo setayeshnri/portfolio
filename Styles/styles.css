@@ -137,7 +137,6 @@ a:visited {
 }
 .sec1-2 p {
   width: 70%;
-  
 }
 .sec2 {
   display: flex;
@@ -155,7 +154,7 @@ a:visited {
 }
 .projectImg2 {
   width: 90%;
-  
+
   z-index: 2;
   object-fit: cover;
   margin-bottom: 40px;
@@ -186,12 +185,11 @@ a:visited {
   margin-top: 97px;
   padding: 0;
 }
-.btn2{
- 
+.btn2 {
   margin-bottom: 10px;
-background-color: rgba(255, 227, 234, 1);
-padding:10px  30px;
-border-radius: 60px;
+  background-color: rgba(255, 227, 234, 1);
+  padding: 10px 30px;
+  border-radius: 60px;
 }
 span {
   vertical-align: top;
@@ -280,8 +278,7 @@ span {
 }
 .projects2 {
   display: none;
-  display: flex;
-  align-items: center;
+
   margin: auto;
 }
 .intro2 {
@@ -297,7 +294,6 @@ span {
   }
 }
 @media (max-width: 1050px) {
- 
   .navbar {
     padding-right: 0%;
   }
@@ -314,14 +310,13 @@ span {
     width: 100%;
     height: fit-content;
   }
- 
+
   .tools {
-   
     margin: auto;
     padding: 24px;
     margin-bottom: 30px;
   }
-  .sec1{
+  .sec1 {
     margin: auto;
   }
   .sec1-2 p {
@@ -330,31 +325,29 @@ span {
     margin-bottom: -70px;
   }
   .sec1-2 {
-   margin: auto;
-   align-items: center;
-   padding: auto;
-   text-align: center;
+    margin: auto;
+    align-items: center;
+    padding: auto;
+    text-align: center;
   }
   .sec2 {
-   margin: auto;
+    margin: auto;
   }
-  .square1{
-   /*width: 30%;
+  .square1 {
+    /*width: 30%;
     height: 30vh;
     margin-top: auto;
    margin-bottom: -41%;
    margin-right: -18%;*/
-  display: none;
-   
+    display: none;
   }
-  .square2{
+  .square2 {
     /*margin: auto;
     height: 340px;
     width: 440px;
     margin-left: 140px;
     margin-top: -300px;*/
     display: none;
-    
   }
   .intro1 {
     display: none;
