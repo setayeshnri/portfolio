@@ -106,6 +106,10 @@ a:visited {
   margin-left: 5%;
   margin-bottom: 60px;
 }
+.projectLink{
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 900px) {
   .type1h1 {
     font-size: 600%;

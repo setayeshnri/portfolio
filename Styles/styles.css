@@ -28,7 +28,7 @@
 body {
   font-family: "Lato", sans-serif;
   background-color: rgba(255, 250, 251, 1);
-  overflow-x:hidden ;
+  overflow-x: hidden;
 }
 
 .intro {
@@ -111,57 +111,70 @@ a:visited {
   height: 700px;
   display: flex;
   flex-direction: row;
-   flex-shrink: 0;
+  flex-shrink: 0;
 }
 .sec1 {
   display: flex;
   flex-direction: column;
+  margin-left: 10%;
 }
 .sec1-2 {
-  display: flex;
-  flex-direction: column;
   align-items: start;
-  margin-left: 215px;
 }
 .tools {
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+
   font-size: 16px;
   line-height: 16px;
   font-weight: 400px;
-  padding: 97px 120px;
- 
+  padding-top: 90px;
+}
+.tools p {
+  margin-right: 10%;
+}
+.sec1-2 p {
+  width: 70%;
+  
 }
 .sec2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-top: 100px;
 }
 .projectImg {
+  margin-top: 25%;
   margin-right: 80px;
-width: 100%;
-  margin-top: 32px;
+  width: 95%;
+  height: 95%;
   z-index: 2;
-  height: 70%;
+}
+.projectImg2 {
+  width: 90%;
   
+  z-index: 2;
+  object-fit: cover;
+  margin-bottom: 40px;
 }
 .square1 {
   background: rgba(255, 227, 234, 1);
   width: 40%;
-  height: 269px;
-  margin-top: 100px;
+  height: 160px;
+
   margin-bottom: -370px;
   margin-left: 300px;
 }
 .square2 {
   background-color: rgba(255, 255, 255, 1);
-  width: 80%;
-  height: 375px;
+  width: 87%;
+  height: 480px;
   margin-left: -120px;
 
-  margin-top: -350px;
+  margin-top: -450px;
   z-index: 1;
 }
 .material-symbols-outlined {
@@ -173,6 +186,13 @@ width: 100%;
   margin-top: 97px;
   padding: 0;
 }
+.btn2{
+ 
+  margin-bottom: 10px;
+background-color: rgba(255, 227, 234, 1);
+padding:10px  30px;
+border-radius: 60px;
+}
 span {
   vertical-align: top;
   color: rgba(255, 94, 135, 1);
@@ -181,10 +201,7 @@ span {
   margin-top: 18px;
   margin-right: 4px;
 }
-.sfooter {
-  background-color: rgb(223, 219, 214);
-  width: 100%;
-}
+
 .bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
@@ -196,9 +213,8 @@ span {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.nav-link:hover{
-  color:rgba(255, 94, 135, 1);
-
+.nav-link:hover {
+  color: rgba(255, 94, 135, 1);
 }
 @-webkit-keyframes bounce {
   0%,
@@ -264,10 +280,14 @@ span {
 }
 .projects2 {
   display: none;
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 .intro2 {
   display: none;
 }
+
 @media (max-width: 600px) {
   .nav1 {
     display: none;
@@ -276,7 +296,8 @@ span {
     display: inline-block;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 1050px) {
+ 
   .navbar {
     padding-right: 0%;
   }
@@ -286,26 +307,54 @@ span {
   .projects2 {
     display: inline-block;
   }
-  .projectImg {
-    margin: auto;
-  }
+
   .rows {
     display: flex;
     flex-direction: column;
-
-    height: 100vh;
+    width: 100%;
+    height: fit-content;
   }
+ 
   .tools {
+   
+    margin: auto;
     padding: 24px;
     margin-bottom: 30px;
   }
+  .sec1{
+    margin: auto;
+  }
+  .sec1-2 p {
+    width: auto;
+    margin-top: -24px;
+    margin-bottom: -70px;
+  }
   .sec1-2 {
-    padding-left: 0;
-    align-items: center;
+   margin: auto;
+   align-items: center;
+   padding: auto;
+   text-align: center;
   }
   .sec2 {
-    margin-top: 40px;
-    height: 400px;
+   margin: auto;
+  }
+  .square1{
+   /*width: 30%;
+    height: 30vh;
+    margin-top: auto;
+   margin-bottom: -41%;
+   margin-right: -18%;*/
+  display: none;
+   
+  }
+  .square2{
+    /*margin: auto;
+    height: 340px;
+    width: 440px;
+    margin-left: 140px;
+    margin-top: -300px;*/
+    display: none;
+    
   }
   .intro1 {
     display: none;
