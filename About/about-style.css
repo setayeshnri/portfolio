@@ -158,6 +158,11 @@ a:visited {
 }
 
 @media (max-width: 860px) {
+  .texts{
+    
+    padding: 8px;
+    padding-top: 14px;
+  }
   .nav1 {
     display: none;
   }
