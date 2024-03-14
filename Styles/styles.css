@@ -304,6 +304,7 @@ span {
   .nav2 {
     display: inline-block;
   }
+ 
 }
 @media (max-width: 1050px) {
   body {
@@ -311,6 +312,7 @@ span {
   }
   .navbar {
     padding-right: 0%;
+    padding-left: 10%;
   }
   .start {
     margin-bottom: 300px;
@@ -330,7 +332,9 @@ span {
     height: 120vh;
     align-items: stretch;
   }
-
+  .headers {
+    text-align: center;
+  }
   .tools {
     margin: auto;
     padding: 24px;
@@ -369,7 +373,7 @@ span {
     height: 100vh;
     display: flex;
     flex-direction: column;
-
+    text-align: center;
     align-items: center;
     width: 100%;
   }
@@ -379,4 +383,8 @@ span {
     border-radius: 100%;
     object-fit: cover;
   }
+ 
+.circle2{
+  margin-left: 70%;
+}
 }
