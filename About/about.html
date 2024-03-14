@@ -34,7 +34,11 @@
     <main>
       <nav class="navbar nav1">
         <div class="navContainer">
-          <a class="navbar-brand" style="color: rgb(0, 0, 0)" href="/"
+          <a
+            id="setayesh"
+            class="navbar-brand"
+            style="color: rgb(0, 0, 0)"
+            href="/"
             >SETAYESH</a
           >
 
@@ -72,7 +76,7 @@
               <a
                 style="color: rgba(255, 250, 251, 1)"
                 class="nav-link"
-                href="/contact.html"
+                href="/contact/contact.html"
                 title="Contact Setayesh"
                 >CONTACT</a
               >
@@ -167,10 +171,12 @@
                 strategies and server-side development with Node.js.
               </p>
               <div class="links" id="contact">
-                <a href=""
+                <a
+                  href="https://www.linkedin.com/in/setayesh-nouri-9776b5222/"
+                  target="_blank"
                   ><i><img src="/images/link.png" alt="linkedin" /></i
                 ></a>
-                <a href=""
+                <a href="mailto:setayeshn1382@gmail.com" target="_blank"
                   ><i
                     ><img
                       src="/images/mail.png"
@@ -236,5 +242,18 @@
         </div>
       </div>
     </main>
+    <script>
+      window.addEventListener("scroll", function () {
+        const name = document.getElementById("setayesh");
+        const distanceFromTop = name.getBoundingClientRect().top;
+        if (distanceFromTop <= window.innerHeight / 20) {
+          name.style.color = " transparent";
+        } 
+      
+        else {
+          name.style.color = " black";
+        }
+      });
+    </script>
   </body>
 </html>
