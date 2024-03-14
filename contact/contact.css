@@ -1,0 +1,151 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgba(255, 250, 251, 1);
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 250, 251, 1);
+}
+.nav1 {
+  padding: 40px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+.nav2 {
+  display: none;
+}
+.navContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin-left: 11%;
+  font-size: 70px;
+  font-family: "Times New Roman", Times, serif;
+}
+.links {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  height: 400px;
+
+  margin-top: 60px;
+  margin-left: 12%;
+  padding: 6%;
+  padding-top: 90px;
+}
+.pinkSquare {
+  background-color: rgba(255, 227, 234, 1);
+  width: 260px;
+  height: 240px;
+  margin-right: none;
+  margin-top: 50px;
+  margin-bottom: -200px;
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 45px;
+}
+.linktxt {
+  font-size: 3vh;
+  margin-left: 20%;
+  margin-right: -20%;
+}
+.cv {
+  text-decoration: none;
+  color: black;
+  font-size: 170%;
+  margin-left: -2%;
+}
+.linkedin {
+  width: 150%;
+}
+.email {
+  width: 140%;
+  margin-left: -3px;
+}
+.cvtxt {
+  margin-left: 18%;
+}
+.emailtxt {
+  margin-left: 24%;
+  margin-right: -25%;
+}
+@media (max-width: 1110px) {
+  .nav1 {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 860px) {
+  .nav1 {
+    display: none;
+  }
+  .nav2 {
+    display: inline-block;
+  }
+}
+@media (max-width: 770px) {
+  body {
+    padding-bottom: 60px;
+  }
+  h1 {
+    font-size: 7vh;
+  }
+  .links {
+    height: 500px;
+    text-align: center;
+   padding-top: 50px;
+   padding-bottom: 50px;
+  }
+  .link {
+    flex-direction: column;
+    margin: auto;
+  }
+  .linktxt {
+    margin: auto;
+  }
+  .linkedin {
+    width: 13%;
+  }
+  .email {
+    width: 20%;
+  }
+  .cvtxt {
+    margin: auto;
+  }
+  .emailtxt{
+    margin: auto;
+  }
+}
+@media(max-width:500px){
+  h1{
+    font-size: 6vh;
+  }
+  .links{
+    width: 70%;
+  }
+}
+@media (max-width:380px){
+  h1{
+    font-size: 5vh;
+  }
+}

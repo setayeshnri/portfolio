@@ -51,7 +51,7 @@
                 style="color: rgba(255, 94, 135, 1)"
                 class="nav-link"
                 aria-current="page"
-                href="/#projects"
+                href="/index.html#projects"
                 title="homepage"
                 >PROJECTS</a
               >
@@ -128,7 +128,7 @@
                   <a
                     style="color: rgba(255, 250, 251, 1)"
                     class="nav-link"
-                    href="/#projects"
+                    href="/index.html#projects"
                     >PROJECTS</a
                   >
                 </li>
@@ -164,11 +164,18 @@
           <button class="viewBtn">
             <i class="fa-brands fa-github git"></i>View the project
           </button>
-          <button class="viewBtn">View the live project</button>
+          <button class="viewBtn">
+            <a
+              class="projectLink"
+              target="_blank"
+              href="https://the-reactor-blog.netlify.app/"
+              >View the live project</a
+            >
+          </button>
         </div>
       </div>
     </main>
-       <script>
+    <script>
       if (window.matchMedia("(max-width: 600px)").matches) {
         var element = document.getElementById("type1h1");
 

@@ -133,7 +133,12 @@
 
             <div class="image">
               <div class="circle1"></div>
-              <img class="pic1" src="/images/pic2.JPEG" alt="Setayesh nouri" style="object-fit: cover;"/>
+              <img
+                class="pic1"
+                src="/images/pic2.JPEG"
+                alt="Setayesh nouri"
+                style="object-fit: cover"
+              />
               <div class="circle2"></div>
             </div>
           </div>
@@ -143,9 +148,10 @@
             id="scrollImage"
           />
         </div>
-        <div class="projects1" id="projects">
+        <div id="projects"></div>
+        <div class="projects1">
           <div class="PlantButlers">
-            <div class="rows" style="margin-top: 40px;">
+            <div class="rows" style="margin-top: 40px">
               <div class="sec1 col-sm">
                 <div class="tools col-sm">
                   <p>#React</p>
@@ -248,9 +254,7 @@
             </div>
           </div>
           <div class="React Blog">
-                         
-            <div class="rows" style="margin-bottom: 0; ">
-
+            <div class="rows" style="margin-bottom: 0">
               <div class="sec2">
                 <div class="square1" style="margin-left: -350px"></div>
                 <img
@@ -285,11 +289,15 @@
                 </div>
               </div>
             </div>
-             <img style="display: none;" class="scrollUp" src="/images/upsidedownArrow.png" id="scrollUp">
-       
+            <img
+              style="display: none"
+              class="scrollUp"
+              src="/images/upsidedownArrow.png"
+              id="scrollUp"
+            />
           </div>
-          
         </div>
+
         <div class="projects2">
           <div class="PlantButlers">
             <div class="rows">
@@ -410,43 +418,45 @@
         </div>
       </div>
     </main>
-    <script>document.addEventListener("DOMContentLoaded", function () {
-  var scrollImage = document.getElementById("scrollImage");
-  var scrollUp = document.getElementById("scrollUp");
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var scrollImage = document.getElementById("scrollImage");
+        var scrollUp = document.getElementById("scrollUp");
 
-  if (scrollImage && scrollUp) {
-    scrollImage.addEventListener("click", function () {
-      // Perform the smooth scroll
-      window.scrollBy({
-        top: 800,
-        behavior: "smooth",
+        if (scrollImage && scrollUp) {
+          scrollImage.addEventListener("click", function () {
+            // Perform the smooth scroll
+            window.scrollBy({
+              top: 800,
+              behavior: "smooth",
+            });
+          });
+
+          // Check the scroll position when scrolling
+          window.addEventListener("scroll", function () {
+            var distanceToBottom =
+              document.documentElement.scrollHeight -
+              (window.scrollY + window.innerHeight);
+
+            // Check if there's less than 200px left to the bottom of the page
+            if (distanceToBottom < 200) {
+              scrollImage.style.display = "none"; // Hide scrollImage
+              scrollUp.style.display = "block"; // Show scrollUp
+            } else {
+              scrollImage.style.display = "block"; // Show scrollImage
+              scrollUp.style.display = "none"; // Hide scrollUp
+            }
+          });
+
+          scrollUp.addEventListener("click", function () {
+            // Scroll to the top of the page
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          });
+        }
       });
-    });
-
-    // Check the scroll position when scrolling
-    window.addEventListener("scroll", function () {
-      var distanceToBottom = document.documentElement.scrollHeight - (window.scrollY + window.innerHeight);
-
-      // Check if there's less than 200px left to the bottom of the page
-      if (distanceToBottom < 200) {
-        scrollImage.style.display = "none"; // Hide scrollImage
-        scrollUp.style.display = "block";   // Show scrollUp
-      } else {
-        scrollImage.style.display = "block";  // Show scrollImage
-        scrollUp.style.display = "none";      // Hide scrollUp
-      }
-    });
-
-    scrollUp.addEventListener("click", function () {
-      // Scroll to the top of the page
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    });
-  }
-});
-
     </script>
   </body>
 </html>
